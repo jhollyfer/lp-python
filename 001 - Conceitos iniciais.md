@@ -1,8 +1,14 @@
-# Aula 01 - Fundamentos da Programação Python
+# Aula 01 - Introdução ao Mundo da Programação com Python
 
-**Data:** 06/10/2025  
-**Carga Horária:** 4 horas  
-**Docente:** Marcos Jhollyfer Felix Rodrigues
+**Centro de Educação Tecnológica do Amazonas - CETAM**  
+**Curso:** Qualificação Profissional em Linguagem de Programação Python  
+**Data:** 06/10/2025 | **Carga Horária:** 4 horas
+
+---
+
+## Bem-vindo ao Mundo da Programação!
+
+Hoje você dará os primeiros passos em uma jornada empolgante. Vamos descobrir juntos o que é programação, conhecer a linguagem Python e aprender como transformar ideias em instruções que o computador pode executar.
 
 ---
 
@@ -11,60 +17,80 @@
 1. [Introdução às Linguagens de Programação](#1-introdução-às-linguagens-de-programação)
 2. [História e Evolução do Python](#2-história-e-evolução-do-python)
 3. [Conceito de Pseudocódigo e Algoritmos](#3-conceito-de-pseudocódigo-e-algoritmos)
-4. [Apresentação do Curso](#4-apresentação-do-curso)
-5. [Configuração do Ambiente de Desenvolvimento](#5-configuração-do-ambiente-de-desenvolvimento)
+4. [Atividades Práticas](#4-atividades-práticas)
 
 ---
 
 ## 1. Introdução às Linguagens de Programação
 
+### O que é Programação?
+
+Programação é a arte de ensinar o computador a fazer coisas. É como escrever uma receita de bolo, mas em vez de instruir uma pessoa, você instrui uma máquina.
+
+**Pense assim:**
+- Quando você diz para um amigo "vá até a padaria e compre pão", ele entende naturalmente
+- Um computador precisa de instruções muito mais detalhadas e precisas
+- A programação é a linguagem que usamos para dar essas instruções
+
 ### O que é uma Linguagem de Programação?
 
-Uma linguagem de programação é um sistema de comunicação estruturado que permite aos seres humanos instruir computadores a realizar tarefas específicas. É um conjunto de regras, sintaxe e semântica que possibilita a criação de programas.
+Uma linguagem de programação é um conjunto de regras e palavras especiais que usamos para nos comunicar com o computador.
 
-**Analogia:** Assim como usamos português para nos comunicar com outras pessoas, usamos linguagens de programação para nos comunicar com computadores.
+**Analogia simples:**
+- Português é a língua que usamos para falar com pessoas brasileiras
+- Inglês é a língua que usamos para falar com pessoas de outros países
+- Python é a "língua" que usamos para falar com computadores
+
+### Como o Computador Entende?
+
+Os computadores só entendem uma linguagem: **zeros e uns** (linguagem binária).
+
+```
+01001000 01100101 01101100 01101100 01101111
+```
+
+Isso significa "Hello" em binário!
+
+Mas imagina ter que escrever assim? Seria muito difícil! Por isso existem as linguagens de programação.
 
 ### Níveis de Linguagens
 
 #### Linguagens de Baixo Nível
 
-Estão próximas da linguagem de máquina (0s e 1s):
+Estão mais próximas da linguagem que o computador entende diretamente.
 
-**Exemplo de Assembly:**
+**Exemplo - Assembly:**
 ```assembly
 MOV AX, 5
 ADD AX, 3
 ```
 
 **Características:**
-- Difícil de ler e escrever
-- Controle total sobre o hardware
-- Específica para cada processador
-- Muito rápida na execução
+- Difícil de escrever e entender
+- Muito próxima do hardware
+- Usada em situações muito específicas
 
 #### Linguagens de Alto Nível
 
-Mais próximas da linguagem humana:
+Estão mais próximas da linguagem humana, mais fáceis de ler e escrever.
 
-**Exemplo em Python:**
+**Exemplo - Python:**
 ```python
 resultado = 5 + 3
 ```
 
 **Características:**
 - Fácil de ler e escrever
-- Portável entre diferentes sistemas
-- Abstrai detalhes do hardware
-- Foca na lógica do problema
+- Mais próxima da linguagem natural
+- Funciona em diferentes computadores
+- É o que vamos aprender!
 
-### Por que Python?
+### Comparando Linguagens
 
-Python é considerado uma linguagem de **altíssimo nível** devido à sua sintaxe extremamente legível:
+Vamos ver como diferentes linguagens fazem a mesma coisa: mostrar "Olá, Mundo!" na tela.
 
-**Comparação entre linguagens:**
-
+**Em C:**
 ```c
-// Em C
 #include <stdio.h>
 int main() {
     printf("Olá, Mundo!\n");
@@ -72,163 +98,229 @@ int main() {
 }
 ```
 
+**Em Java:**
 ```java
-// Em Java
-public class HelloWorld {
+public class OlaMundo {
     public static void main(String[] args) {
         System.out.println("Olá, Mundo!");
     }
 }
 ```
 
+**Em Python:**
 ```python
-# Em Python
 print("Olá, Mundo!")
 ```
 
-### Paradigmas de Programação
+Viu a diferença? Python é muito mais simples e direto!
 
-Python suporta múltiplos paradigmas:
+### Por que Aprender Programação?
 
-#### Programação Imperativa
-Sequência de comandos que alteram o estado do programa:
+1. **Resolver Problemas do Dia a Dia**
+   - Automatizar tarefas repetitivas
+   - Organizar informações
+   - Criar soluções personalizadas
 
-```python
-idade = 18
-if idade >= 18:
-    print("Você é maior de idade")
-else:
-    print("Você é menor de idade")
-```
+2. **Oportunidades Profissionais**
+   - Alta demanda no mercado
+   - Bons salários
+   - Trabalho remoto possível
 
-#### Programação Orientada a Objetos
-Organização do código em objetos que possuem propriedades e comportamentos:
+3. **Desenvolver o Raciocínio**
+   - Pensar de forma lógica
+   - Decompor problemas complexos
+   - Criar soluções criativas
 
-```python
-class Pessoa:
-    def __init__(self, nome, idade):
-        self.nome = nome
-        self.idade = idade
-    
-    def apresentar(self):
-        print(f"Olá, meu nome é {self.nome}")
-```
+4. **Criar Suas Próprias Ferramentas**
+   - Aplicativos
+   - Websites
+   - Jogos
+   - Análise de dados
 
-#### Programação Funcional
-Uso de funções como elementos principais:
+### Onde a Programação é Usada?
 
-```python
-def dobro(numero):
-    return numero * 2
+**Você usa programação todos os dias, mesmo sem perceber:**
 
-numeros = [1, 2, 3, 4, 5]
-dobrados = list(map(dobro, numeros))
-# Resultado: [2, 4, 6, 8, 10]
-```
+- **Celular:** Todos os aplicativos foram programados
+- **Redes Sociais:** Instagram, Facebook, TikTok
+- **Streaming:** Netflix, Spotify, YouTube
+- **Jogos:** Fortnite, Free Fire, Minecraft
+- **Banco:** Aplicativo do seu banco
+- **Transporte:** Uber, 99, aplicativos de ônibus
 
-### Aplicações Práticas de Python
-
-| Área | Aplicação | Exemplos |
-|------|-----------|----------|
-| **Web Development** | Sites e aplicações web | Instagram, Spotify, YouTube |
-| **Data Science** | Análise de dados | Pandas, NumPy, Matplotlib |
-| **Machine Learning** | Inteligência Artificial | TensorFlow, scikit-learn |
-| **Automação** | Scripts e tarefas repetitivas | Web scraping, processamento de arquivos |
-| **Games** | Desenvolvimento de jogos | Pygame |
-| **DevOps** | Infraestrutura e deploy | Ansible, AWS CLI |
+**Tudo que é digital foi programado por alguém!**
 
 ---
 
 ## 2. História e Evolução do Python
 
-### A Criação
+### A Criação do Python
 
-**Guido van Rossum**, programador holandês, criou Python em **1991** no Instituto de Pesquisa Nacional para Matemática e Ciência da Computação (CWI) na Holanda.
+Python foi criado por **Guido van Rossum**, um programador holandês, no final de 1989, e lançado em 1991.
 
-**Curiosidade:** O nome "Python" não vem da cobra, mas sim do grupo de comédia britânico **Monty Python's Flying Circus**, do qual Guido era grande fã!
+**Curiosidade:** O nome "Python" não vem da cobra! Guido era fã de um grupo de comédia britânico chamado **Monty Python**, e decidiu homenageá-los.
 
-### A Filosofia Python
+### Por que Guido Criou o Python?
 
-Em 1999, Tim Peters escreveu **The Zen of Python** - 19 princípios que guiam o desenvolvimento em Python:
+Guido queria criar uma linguagem que fosse:
+
+1. **Fácil de Ler** - O código deveria parecer com inglês (ou português)
+2. **Fácil de Aprender** - Iniciantes deveriam conseguir programar rapidamente
+3. **Poderosa** - Capaz de fazer coisas complexas de forma simples
+4. **Divertida** - Programar deveria ser prazeroso, não frustrante
+
+### A Filosofia do Python: The Zen of Python
+
+Em 1999, Tim Peters escreveu 19 princípios que guiam a programação em Python. Você pode vê-los digitando:
 
 ```python
 import this
 ```
 
-**Principais princípios:**
+**Os mais importantes para iniciantes:**
 
-> **Beautiful is better than ugly.**  
-> Bonito é melhor que feio.
+> **Bonito é melhor que feio**
+> O código deve ser agradável de ler
 
-> **Explicit is better than implicit.**  
-> Explícito é melhor que implícito.
+> **Simples é melhor que complexo**
+> Sempre busque a solução mais simples
 
-> **Simple is better than complex.**  
-> Simples é melhor que complexo.
+> **Legibilidade conta**
+> Outras pessoas precisam entender seu código
 
-> **Readability counts.**  
-> Legibilidade conta.
+> **Erros nunca devem passar silenciosamente**
+> É melhor saber quando algo dá errado
 
 **Exemplo prático:**
 
 ```python
-# Forma explícita e legível (Pythonic)
-total = 0
-for numero in numeros:
-    total += numero
+# Forma Pythônica (boa)
+nome = "Maria"
+idade = 20
+print(f"{nome} tem {idade} anos")
 
-# Menos legível
-t=0;[t:=t+n for n in nums]
+# Forma complicada (ruim)
+n="Maria";i=20;print(n+" tem "+str(i)+" anos")
 ```
 
-### Linha do Tempo
+### Linha do Tempo do Python
 
 ```
-1991  - Python 0.9.0 (primeira versão)
-1994  - Python 1.0 (lambda, map, filter, reduce)
-2000  - Python 2.0 (list comprehensions, garbage collector)
-2008  - Python 3.0 (grande revisão, não retrocompatível)
-2020  - Python 2.7 descontinuado
-2023  - Python 3.12 (melhorias de performance)
-2024  - Python 3.13 (compilador JIT experimental)
+1989  - Guido começa a trabalhar no Python
+1991  - Python 0.9.0 lançado (primeira versão)
+1994  - Python 1.0 lançado
+2000  - Python 2.0 lançado
+2008  - Python 3.0 lançado (grande mudança!)
+2020  - Python 2 é descontinuado
+2024  - Python 3.12 (versão atual)
+2025  - Python continua crescendo!
 ```
 
 ### Python 2 vs Python 3
 
-**Python 2** (descontinuado em 2020):
+**Python 2** (não usamos mais):
 ```python
-print "Olá, Mundo!"  # sem parênteses
+print "Olá"  # sem parênteses
 ```
 
-**Python 3** (versão atual):
+**Python 3** (o que vamos aprender):
 ```python
-print("Olá, Mundo!")  # com parênteses
+print("Olá")  # com parênteses
 ```
 
 **Outras diferenças importantes:**
 
 ```python
 # Python 2
-5 / 2  # Resultado: 2 (divisão inteira)
+5 / 2    # resultado: 2
 
 # Python 3
-5 / 2  # Resultado: 2.5 (divisão real)
-5 // 2 # Resultado: 2 (divisão inteira explícita)
+5 / 2    # resultado: 2.5
+5 // 2   # resultado: 2 (divisão inteira)
 ```
 
-### Python no Mercado Atual
+### Por que Python é Tão Popular?
 
-**Estatísticas (2024):**
+Python se tornou uma das linguagens mais populares do mundo. Veja por quê:
 
-- **3ª linguagem mais popular** no GitHub
-- **1ª linguagem** em Data Science e Machine Learning
-- **Crescimento de 40%** em vagas de emprego nos últimos 3 anos
-- Usada por **gigantes da tecnologia**: Google, Facebook, Netflix, NASA
+#### 1. Fácil de Aprender
 
-**Salários médios no Brasil (2024):**
-- Júnior: R$ 3.000 - R$ 5.000
-- Pleno: R$ 6.000 - R$ 10.000
-- Sênior: R$ 12.000 - R$ 20.000+
+```python
+# Isso é tudo que você precisa para começar!
+print("Olá, Mundo!")
+```
+
+#### 2. Versátil
+
+Python pode fazer quase tudo:
+
+**Sites e Aplicações Web:**
+- Instagram (mais de 2 bilhões de usuários)
+- Spotify (serviço de música)
+- YouTube (maior site de vídeos)
+- Pinterest (rede social de imagens)
+
+**Ciência de Dados e Análise:**
+- Analisar dados de vendas
+- Prever tendências
+- Criar gráficos e visualizações
+
+**Inteligência Artificial:**
+- ChatGPT
+- Reconhecimento facial
+- Carros autônomos
+- Recomendações da Netflix
+
+**Automação:**
+- Organizar arquivos automaticamente
+- Enviar emails em massa
+- Processar planilhas
+
+**Jogos:**
+- Pygame para criar jogos 2D
+- Scripts para Minecraft
+
+#### 3. Grande Comunidade
+
+- Milhões de programadores ao redor do mundo
+- Muitos tutoriais e cursos gratuitos
+- Fácil encontrar ajuda quando tiver dúvidas
+
+#### 4. Bibliotecas Poderosas
+
+Python tem "ferramentas prontas" para quase tudo:
+
+| Biblioteca | Para que serve |
+|------------|----------------|
+| **NumPy** | Cálculos matemáticos |
+| **Pandas** | Análise de dados |
+| **Matplotlib** | Criar gráficos |
+| **Django** | Criar websites |
+| **TensorFlow** | Inteligência Artificial |
+| **Pygame** | Criar jogos |
+
+### Python no Mercado de Trabalho
+
+**Estatísticas interessantes:**
+
+- Python é a **3ª linguagem mais usada** no mundo
+- É a **número 1** em Data Science e IA
+- Vagas cresceram **40%** nos últimos 3 anos
+
+**Salários no Brasil (2024):**
+- Iniciante: R$ 3.000 - R$ 5.000
+- Intermediário: R$ 6.000 - R$ 10.000
+- Avançado: R$ 12.000 - R$ 20.000+
+
+### Empresas que Usam Python
+
+**Gigantes da Tecnologia:**
+- Google (buscador)
+- Netflix (streaming)
+- NASA (exploração espacial)
+- Uber (transporte)
+- Dropbox (armazenamento)
+- Reddit (rede social)
 
 ---
 
@@ -236,63 +328,80 @@ print("Olá, Mundo!")  # com parênteses
 
 ### O que é um Algoritmo?
 
-Um algoritmo é uma sequência finita de passos bem definidos para resolver um problema ou realizar uma tarefa.
+Um algoritmo é uma sequência de passos para resolver um problema ou realizar uma tarefa.
 
-**Características de um algoritmo:**
-1. **Finito** - deve terminar em algum momento
-2. **Definido** - passos claros e não ambíguos
-3. **Entrada** - recebe dados (pode ser zero ou mais)
-4. **Saída** - produz resultado
-5. **Efetivo** - cada passo deve ser executável
+**Você já usa algoritmos no dia a dia!**
 
-### Algoritmos do Cotidiano
-
-#### Exemplo 1: Fazer um Café
+#### Algoritmo 1: Escovar os Dentes
 
 ```
-Algoritmo: FazerCafé
-Entrada: Café em pó, água, filtro
-Saída: Café pronto
-
-Início
-    1. Pegar o suporte do filtro
-    2. Colocar o filtro de papel
-    3. Adicionar 2 colheres de café em pó
-    4. Ferver 500ml de água
-    5. Despejar água quente lentamente
-    6. Aguardar o café coar completamente
-    7. Servir na xícara
-Fim
+1. Pegar a escova de dentes
+2. Pegar o creme dental
+3. Abrir o creme dental
+4. Colocar creme dental na escova
+5. Fechar o creme dental
+6. Abrir a torneira
+7. Molhar a escova
+8. Escovar os dentes (2 minutos)
+9. Enxaguar a boca
+10. Lavar a escova
+11. Fechar a torneira
 ```
 
-#### Exemplo 2: Calcular Média de Notas
+Isso é um algoritmo! Uma sequência clara de passos.
+
+#### Algoritmo 2: Fazer um Sanduíche
 
 ```
-Algoritmo: CalcularMédia
-Entrada: nota1, nota2, nota3
-Saída: média
+1. Pegar duas fatias de pão
+2. Pegar a manteiga
+3. Passar manteiga em uma fatia
+4. Pegar o queijo
+5. Colocar queijo em cima da manteiga
+6. Pegar o presunto
+7. Colocar presunto em cima do queijo
+8. Cobrir com a outra fatia de pão
+9. Sanduíche pronto!
+```
 
-Início
-    1. Ler nota1
-    2. Ler nota2
-    3. Ler nota3
-    4. soma ← nota1 + nota2 + nota3
-    5. média ← soma / 3
-    6. Mostrar média
-Fim
+### Características de um Bom Algoritmo
+
+Um algoritmo deve ser:
+
+1. **Finito** - Deve terminar em algum momento
+2. **Claro** - Cada passo deve ser bem definido
+3. **Com Entrada** - Recebe informações (pode ser zero)
+4. **Com Saída** - Produz um resultado
+5. **Efetivo** - Cada passo deve ser possível de executar
+
+### Algoritmos na Programação
+
+Vamos ver um algoritmo computacional simples:
+
+#### Exemplo: Calcular a Média de Duas Notas
+
+**Em português:**
+```
+1. Perguntar a primeira nota
+2. Guardar a resposta
+3. Perguntar a segunda nota
+4. Guardar a resposta
+5. Somar as duas notas
+6. Dividir o resultado por 2
+7. Mostrar a média
 ```
 
 ### O que é Pseudocódigo?
 
-Pseudocódigo é uma forma de escrever algoritmos usando uma linguagem intermediária entre a linguagem natural e a linguagem de programação.
+Pseudocódigo é uma forma de escrever algoritmos que está entre a linguagem natural (português) e a linguagem de programação.
 
-**Vantagens:**
+**Por que usar pseudocódigo?**
 - Foca na lógica, não na sintaxe
-- Facilita o planejamento antes de codificar
-- Independente de linguagem de programação
-- Mais fácil de entender e revisar
+- Mais fácil de entender
+- Facilita planejar antes de programar
+- Funciona para qualquer linguagem
 
-### Estruturas Básicas em Pseudocódigo
+### Estrutura Básica do Pseudocódigo
 
 #### Entrada e Saída
 
@@ -304,34 +413,124 @@ ESCREVA variável
 
 **Exemplo:**
 ```
+ESCREVA "Qual é o seu nome?"
 LEIA nome
 ESCREVA "Olá, ", nome
 ```
 
-#### Atribuição
+#### Variáveis (Guardar Informações)
 
 ```
-variável ← valor
-```
-
-**Exemplo:**
-```
-idade ← 25
 nome ← "João"
-preco ← 49.90
+idade ← 15
+altura ← 1.65
 ```
 
-#### Estruturas Condicionais
+O símbolo `←` significa "recebe" ou "guarda"
+
+#### Operações Matemáticas
 
 ```
-SE condição ENTÃO
-    comandos
-SENÃO
-    comandos
-FIM SE
+soma ← 10 + 5        // resultado: 15
+diferenca ← 10 - 5   // resultado: 5
+produto ← 10 * 5     // resultado: 50
+divisao ← 10 / 5     // resultado: 2
 ```
 
-**Exemplo:**
+### Algoritmos Simples em Pseudocódigo
+
+#### Exemplo 1: Somar Dois Números
+
+```
+Algoritmo: SomarDoisNumeros
+Entrada: numero1, numero2
+Saída: soma
+
+Início
+    ESCREVA "Digite o primeiro número:"
+    LEIA numero1
+    
+    ESCREVA "Digite o segundo número:"
+    LEIA numero2
+    
+    soma ← numero1 + numero2
+    
+    ESCREVA "A soma é:", soma
+Fim
+```
+
+#### Exemplo 2: Verificar se é Maior de Idade
+
+```
+Algoritmo: VerificarIdade
+Entrada: idade
+Saída: mensagem
+
+Início
+    ESCREVA "Digite sua idade:"
+    LEIA idade
+    
+    SE idade >= 18 ENTÃO
+        ESCREVA "Você é maior de idade"
+    SENÃO
+        ESCREVA "Você é menor de idade"
+    FIM SE
+Fim
+```
+
+#### Exemplo 3: Calcular Área de um Retângulo
+
+```
+Algoritmo: CalcularAreaRetangulo
+Entrada: base, altura
+Saída: area
+
+Início
+    ESCREVA "Digite a base do retângulo:"
+    LEIA base
+    
+    ESCREVA "Digite a altura do retângulo:"
+    LEIA altura
+    
+    area ← base * altura
+    
+    ESCREVA "A área do retângulo é:", area
+Fim
+```
+
+### Do Pseudocódigo para Python
+
+Agora vamos transformar nossos pseudocódigos em Python!
+
+#### Exemplo 1: Somar Dois Números
+
+**Pseudocódigo:**
+```
+ESCREVA "Digite o primeiro número:"
+LEIA numero1
+ESCREVA "Digite o segundo número:"
+LEIA numero2
+soma ← numero1 + numero2
+ESCREVA "A soma é:", soma
+```
+
+**Python:**
+```python
+# Somar dois números
+print("Digite o primeiro número:")
+numero1 = int(input())
+
+print("Digite o segundo número:")
+numero2 = int(input())
+
+soma = numero1 + numero2
+
+print("A soma é:", soma)
+```
+
+#### Exemplo 2: Verificar Idade
+
+**Pseudocódigo:**
 ```
 LEIA idade
 SE idade >= 18 ENTÃO
@@ -341,81 +540,28 @@ SENÃO
 FIM SE
 ```
 
-#### Estruturas de Repetição
+**Python:**
+```python
+# Verificar se é maior de idade
+idade = int(input("Digite sua idade: "))
 
-**Enquanto (while):**
-```
-ENQUANTO condição FAÇA
-    comandos
-FIM ENQUANTO
-```
-
-**Para (for):**
-```
-PARA variável DE início ATÉ fim FAÇA
-    comandos
-FIM PARA
+if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
 ```
 
-**Exemplo completo:**
-```
-PARA i DE 1 ATÉ 10 FAÇA
-    ESCREVA i
-FIM PARA
-```
-
-### Do Pseudocódigo ao Python
-
-Vamos converter um algoritmo em pseudocódigo para Python:
+#### Exemplo 3: Calcular Área
 
 **Pseudocódigo:**
 ```
-Algoritmo: VerificarParImpar
-Entrada: numero
-Saída: "Par" ou "Ímpar"
-
-Início
-    LEIA numero
-    SE numero % 2 = 0 ENTÃO
-        ESCREVA "Par"
-    SENÃO
-        ESCREVA "Ímpar"
-    FIM SE
-Fim
+LEIA base
+LEIA altura
+area ← base * altura
+ESCREVA area
 ```
 
 **Python:**
-```python
-# Verificar se número é par ou ímpar
-numero = int(input("Digite um número: "))
-
-if numero % 2 == 0:
-    print("Par")
-else:
-    print("Ímpar")
-```
-
-### Exercício Prático
-
-**Desafio:** Criar um algoritmo em pseudocódigo para:
-
-**Problema:** Calcular a área de um retângulo
-
-**Solução em Pseudocódigo:**
-```
-Algoritmo: CalcularÁreaRetângulo
-Entrada: base, altura
-Saída: área
-
-Início
-    LEIA base
-    LEIA altura
-    área ← base * altura
-    ESCREVA "A área é: ", área
-Fim
-```
-
-**Solução em Python:**
 ```python
 # Calcular área do retângulo
 base = float(input("Digite a base: "))
@@ -426,198 +572,160 @@ area = base * altura
 print(f"A área é: {area}")
 ```
 
+### Tabela de Conversão: Pseudocódigo → Python
 
-### Expectativas e Dicas de Sucesso
-
-**Para ter sucesso no curso:**
-
-1. **Pratique diariamente** - Programação é como um esporte, requer prática constante
-2. **Não tenha medo de errar** - Erros são parte do aprendizado
-3. **Colabore** - Ajude e peça ajuda aos colegas
-4. **Seja curioso** - Explore além do conteúdo da aula
-5. **Faça anotações** - Documente seu aprendizado
-6. **Tire dúvidas** - Não deixe dúvidas acumularem
-7. **Desenvolva projetos pessoais** - Aplique o que aprende em projetos próprios
-
----
-
-## 5. Configuração do Ambiente de Desenvolvimento
-
-Você pode programar em Python de diversas formas:
-
-#### Opção 1: Python + IDLE (Mais Simples)
-- IDE nativa do Python
-- Leve e fácil de usar
-- Ideal para iniciantes
-
-#### Opção 2: Visual Studio Code (Recomendado)
-- Editor poderoso e gratuito
-- Muitos recursos e extensões
-- Usado profissionalmente
-
-#### Opção 3: PyCharm Community
-- IDE completa para Python
-- Muitos recursos profissionais
-- Versão gratuita disponível
-
-#### Opção 4: Ambientes Online
-- Google Colab (gratuito, não requer instalação)
-- Replit (gratuito, interface simples)
-
-### Entendendo o Primeiro Programa
-
-```python
-print("Olá, Mundo!")
-```
-
-**Análise:**
-
-- `print()` - função que exibe texto na tela
-- `"Olá, Mundo!"` - string (texto) entre aspas
-- `()` - parênteses obrigatórios em funções Python 3
-
-### Variações do Olá, Mundo!
-
-#### Variação 1: Múltiplas Linhas
-
-```python
-print("Olá, Mundo!")
-print("Bem-vindo ao Python!")
-print("Vamos aprender programação!")
-```
-
-**Saída:**
-```
-Olá, Mundo!
-Bem-vindo ao Python!
-Vamos aprender programação!
-```
-
-#### Variação 2: Personalização
-
-```python
-nome = "João"
-print("Olá,", nome)
-print("Bem-vindo ao curso de Python!")
-```
-
-**Saída:**
-```
-Olá, João
-Bem-vindo ao curso de Python!
-```
-
-#### Variação 3: Formatação
-
-```python
-nome = "Maria"
-idade = 20
-print(f"Olá, meu nome é {nome} e tenho {idade} anos")
-```
-
-**Saída:**
-```
-Olá, meu nome é Maria e tenho 20 anos
-```
-
-#### Variação 4: Caracteres Especiais
-
-```python
-print("=" * 40)
-print("    BEM-VINDO AO PYTHON!")
-print("=" * 40)
-```
-
-**Saída:**
-```
-========================================
-    BEM-VINDO AO PYTHON!
-========================================
-```
-
-### Exercícios Práticos
-
-#### Exercício 1: Apresentação Pessoal
-
-Crie um programa que exiba:
-- Seu nome
-- Sua idade
-- Sua cidade
-- O que você espera aprender
-
-**Exemplo de solução:**
-
-```python
-nome = "Carlos Silva"
-idade = 22
-cidade = "Benjamin Constant"
-objetivo = "criar aplicações web"
-
-print("=" * 50)
-print("         APRESENTAÇÃO PESSOAL")
-print("=" * 50)
-print(f"Nome: {nome}")
-print(f"Idade: {idade} anos")
-print(f"Cidade: {cidade}")
-print(f"Objetivo: {objetivo}")
-print("=" * 50)
-```
-
-#### Exercício 2: Calculadora Simples
-
-Crie um programa que some dois números:
-
-```python
-numero1 = 10
-numero2 = 25
-soma = numero1 + numero2
-
-print(f"{numero1} + {numero2} = {soma}")
-```
-
-#### Exercício 3: Mensagem Criativa
-
-Crie uma mensagem criativa usando print():
-
-```python
-print("    /\\_/\\  ")
-print("   ( o.o ) ")
-print("    > ^ <  ")
-print("Olá! Sou um gato programador!")
-```
-
-### Recursos Adicionais
-
-#### Documentação Oficial
-- https://docs.python.org/pt-br/3/
-
-#### Tutoriais Interativos
-- https://www.learnpython.org/
-- https://www.codecademy.com/learn/learn-python-3
-
-
-#### Canais no YouTube
-- Curso em Vídeo - Python
-- Otávio Miranda
+| Pseudocódigo | Python |
+|--------------|--------|
+| `LEIA variável` | `variavel = input()` |
+| `ESCREVA "texto"` | `print("texto")` |
+| `variavel ← valor` | `variavel = valor` |
+| `SE condição ENTÃO` | `if condição:` |
+| `SENÃO` | `else:` |
+| `FIM SE` | (indentação) |
+| `//` comentário | `#` comentário |
 
 ---
 
-## Atividades para Casa
+## 4. Atividades Práticas
 
-### Tarefa 1: Prática
+### Atividade 1: Criar Algoritmos do Cotidiano
 
-Crie os seguintes programas:
+**Objetivo:** Entender como funcionam os algoritmos
 
-1. Um programa que exiba seu nome
-2. Um programa que calcule e exiba a soma de três números
+**Tarefa:** Escolha uma das atividades abaixo e escreva um algoritmo detalhado:
 
+1. Fazer um café
+2. Trocar uma lâmpada
+3. Preparar macarrão instantâneo
+4. Enviar uma mensagem no WhatsApp
 
-### Tarefa 3: Pesquisa
+**Exemplo de resposta:**
 
-Pesquise e anote:
-- 3 empresas que usam Python
-- 3 áreas de atuação com Python
-- 1 projeto interessante feito em Python
+```
+Algoritmo: PrepararMacarraoInstantaneo
+
+1. Pegar uma panela
+2. Colocar 600ml de água na panela
+3. Colocar a panela no fogão
+4. Acender o fogo
+5. Esperar a água ferver
+6. Abrir o pacote de macarrão
+7. Colocar o macarrão na água fervente
+8. Mexer o macarrão
+9. Esperar 3 minutos
+10. Desligar o fogo
+11. Colocar o tempero
+12. Mexer bem
+13. Servir em um prato
+14. Macarrão pronto!
+```
+
+### Atividade 2: Pseudocódigo
+
+**Objetivo:** Praticar a escrita de pseudocódigo
+
+**Tarefa:** Escreva um algoritmo em pseudocódigo para:
+
+**Problema:** Calcular se uma pessoa pode dirigir (precisa ter 18 anos ou mais)
+
+**Solução:**
+```
+Algoritmo: VerificarPodeDigirir
+Entrada: idade
+Saída: mensagem
+
+Início
+    ESCREVA "Digite sua idade:"
+    LEIA idade
+    
+    SE idade >= 18 ENTÃO
+        ESCREVA "Você pode dirigir!"
+    SENÃO
+        anos_faltando ← 18 - idade
+        ESCREVA "Você não pode dirigir ainda."
+        ESCREVA "Faltam", anos_faltando, "anos"
+    FIM SE
+Fim
+```
+
+### Atividade 3: Identificar Erros
+
+**Objetivo:** Desenvolver atenção aos detalhes
+
+**Tarefa:** O algoritmo abaixo tem erros. Encontre e corrija:
+
+```
+Algoritmo: CalcularMedia
+Entrada: nota1, nota2
+
+Início
+    ESCREVA "Digite a primeira nota"
+    LEIA nota1
+    
+    LEIA nota2
+    
+    media = nota1 + nota2 / 2
+    
+    IMPRIMIR media
+```
+
+**Erros encontrados:**
+1. Falta mensagem antes de ler nota2
+2. Ordem de operação errada (deveria ser `(nota1 + nota2) / 2`)
+3. Usa `IMPRIMIR` em vez de `ESCREVA`
+
+**Versão corrigida:**
+```
+Algoritmo: CalcularMedia
+Entrada: nota1, nota2
+Saída: media
+
+Início
+    ESCREVA "Digite a primeira nota:"
+    LEIA nota1
+    
+    ESCREVA "Digite a segunda nota:"
+    LEIA nota2
+    
+    media ← (nota1 + nota2) / 2
+    
+    ESCREVA "A média é:", media
+Fim
+```
+
+### Atividade 4: Desafio de Lógica
+
+**Objetivo:** Pensar de forma algorítmica
+
+**Problema:** Três pessoas (Ana, Bruno e Carlos) estão em uma fila. Ana não é a primeira. Bruno está entre Ana e Carlos. Em que ordem eles estão?
+
+**Resposta:**
+```
+1. Bruno não pode ser o primeiro (pois está entre os outros dois)
+2. Ana não é a primeira (dado do problema)
+3. Logo, Carlos é o primeiro
+4. Bruno está entre Carlos e Ana
+5. Ordem: Carlos, Bruno, Ana
+```
+
+### Atividade 5: Para Casa
+
+Crie algoritmos em pseudocódigo para:
+
+1. **Calcular o dobro de um número**
+   - Ler um número
+   - Multiplicar por 2
+   - Mostrar o resultado
+
+2. **Verificar se um número é positivo ou negativo**
+   - Ler um número
+   - Verificar se é maior, menor ou igual a zero
+   - Mostrar a resposta
+
+3. **Converter temperatura de Celsius para Fahrenheit**
+   - Ler temperatura em Celsius
+   - Aplicar fórmula: F = C × 1.8 + 32
+   - Mostrar temperatura em Fahrenheit
 
 ---
 
@@ -625,22 +733,64 @@ Pesquise e anote:
 
 Nesta aula você aprendeu:
 
-- O que são linguagens de programação e seus níveis
-- A história e evolução do Python
-- Por que Python é tão popular
-- O conceito de algoritmos e pseudocódigo
+### Sobre Programação
+- O que é uma linguagem de programação
+- Diferença entre linguagens de baixo e alto nível
+- Por que programação é importante
+- Onde a programação é usada
+
+### Sobre Python
+- História de Guido van Rossum
+- Por que Python é fácil de aprender
+- Filosofia do Python (The Zen)
+- Empresas que usam Python
+- Oportunidades no mercado
+
+### Sobre Algoritmos
+- O que é um algoritmo
+- Características de um bom algoritmo
+- Como escrever pseudocódigo
 - Como converter pseudocódigo para Python
-- Os objetivos e estrutura do curso
-- Como configurar o ambiente de desenvolvimento
-- Como criar seu primeiro programa em Python
 
 ---
 
-## Contato
+## Dicas para Estudar em Casa
 
-**Docente:** Marcos Jhollyfer Felix Rodrigues  
-**Instituição:** CETAM - Benjamin Constant  
-**Período:** 06/10/2025 a 04/11/2025
+1. **Pratique escrever algoritmos** para tarefas do seu dia a dia
+2. **Assista vídeos** sobre Python no YouTube
+3. **Leia artigos** sobre programação para iniciantes
+4. **Converse** com seus colegas sobre o que aprendeu
+5. **Não tenha medo de errar** - erro faz parte do aprendizado!
+
+---
+
+## Recursos Úteis
+
+### Sites para Aprender Mais
+
+- **Python.org** - Site oficial do Python
+- **Python Brasil** - Comunidade brasileira
+- **W3Schools** - Tutoriais interativos
+- **Codecademy** - Curso online gratuito
+
+### Canais no YouTube
+
+- Curso em Vídeo (Gustavo Guanabara)
+- Programação Dinâmica
+- Eduardo Mendes
+- Hashtag Programação
+
+---
+
+## Pensamento Final
+
+> "O primeiro passo é sempre o mais difícil. Mas também é o mais importante. Você deu esse passo hoje!"
+
+Parabéns por começar sua jornada na programação! Python é uma linguagem incrível, e você está no caminho certo para aprender algo que pode mudar sua vida profissional.
+
+Lembre-se: todo programador profissional já foi um iniciante um dia. A diferença está na persistência e na prática constante.
+
+**Vamos juntos nessa jornada!**
 
 ---
 
